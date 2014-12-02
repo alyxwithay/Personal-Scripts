@@ -5,10 +5,12 @@ This script reads in a file with a list of ID's to find. It returns the data
 in the file associated with those ID's.
 ARGS: The arguments called to the command line are a list of names/IDs file,
 	  followed by the file to search for them in.
+	  EXAMPLE: 
+	  Alyxandrias-MacBook-Pro:abxD01 alyxschubert$ perl find_lines2.pl ids.txt searchme.txt
+
 NOTE: It's easiest when both inputted files are sorted and you know that you
 	  will find every ID in the file you are looking for.
-NOTE: May need to tailor to whatever kind of file you are parsing through.
-	  Current file type set to: *.ngfa
+NOTE: Both input files should end in LF not CR.
 	  
 Changes:
 7/16/14 find_lines2.pl: Writes over old output instead of adding to existing 
