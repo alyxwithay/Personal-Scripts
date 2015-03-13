@@ -66,7 +66,7 @@ while(@ARGV)
 		$line2 =~ /\t(\S*)\t(\S*)/;
 		$data1 = $1;
 		$data2 = $2; #should print out the taxonomy information, whereas putting $1 will give the OTU size
-		$data2 =~ /\w*\W*(\d*)\W{1,3}(\w*\-?\w*)\W*(\d*)\W{1,3}(\w*\-?\w*)\W*(\d*)\W{1,3}(\w*\-?\w*)\W*(\d*)\W{1,3}(\w*\-?\w*)\W*(\d*)\W{1,3}(\w*\-?\w*)\W*(\d*)/;
+		$data2 =~ /\w*\W*(\d*)\W{1,3}(\w*\-?\w*)\W*(\d*)\W{1,3}(\w*\-?\w*)\W*(\d*)\W{1,3}(\w*\-?\w*)\W*(\d*)\W{1,3}(\w*\-?\w*)\W*(\d*)\W{1,3}(\w*\-?\/?\w*)\W*(\d*)/;
 		#Bacteria(100);Firmicutes(100);unclassified(100);unclassified(100);unclassified(100);unclassified(100);
 		#Bacteria(100);Firmicutes(100);Clostridia(100);Clostridiales(100);Clostridiaceae_1(100);Clostridium_sensu_stricto(100);
 		$tax[0] = $2;#phylum name
